@@ -14,7 +14,6 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var idLabel: UILabel!
-    
-    
+   
     
 }

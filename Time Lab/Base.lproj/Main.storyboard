@@ -212,6 +212,7 @@
                         <outlet property="collectioView" destination="H7W-b9-Iyy" id="YI2-yE-79O"/>
                         <outlet property="menuButton" destination="MnC-dU-wZ3" id="QcM-Nt-i9c"/>
                         <outlet property="slideshow" destination="dCf-fF-qYX" id="3yZ-JT-hdB"/>
+                        <segue destination="NNp-Ax-2bK" kind="show" identifier="detailitem" id="VaS-Yc-jUp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbp-sY-Df6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -333,7 +334,7 @@ We aim to provide the best of the best on our website and application whether it
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hF-9M-GjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-606" y="1452"/>
+            <point key="canvasLocation" x="-772" y="1451"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2HI-es-o7o">
@@ -368,7 +369,7 @@ We aim to provide the best of the best on our website and application whether it
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecy-5W-YJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1092" y="663"/>
+            <point key="canvasLocation" x="-1012" y="670"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1EW-HL-rwL">
@@ -379,19 +380,19 @@ We aim to provide the best of the best on our website and application whether it
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GWJ-wh-o9x">
-                                <rect key="frame" x="16" y="40" width="85.5" height="24"/>
+                                <rect key="frame" x="16" y="84" width="85.5" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s39-ET-1Fz">
-                                <rect key="frame" x="37.5" y="94" width="300" height="150"/>
+                                <rect key="frame" x="37.5" y="138" width="300" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="s39-ET-1Fz" secondAttribute="height" multiplier="4:2" id="TbX-nH-U5W"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEg-Zd-yRu">
-                                <rect key="frame" x="37.5" y="274" width="300" height="130"/>
+                                <rect key="frame" x="37.5" y="318" width="300" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="130" id="qeD-Kc-7Bf"/>
                                 </constraints>

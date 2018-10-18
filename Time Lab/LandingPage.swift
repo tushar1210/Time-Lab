@@ -18,14 +18,9 @@ class LandingPage: UIViewController {
     @IBOutlet weak var slideshow: ImageSlideshow!
     var watchArray = ["watch1","watch2","watch3","watch4"]
     var slideshowArray = ["watch","watch","watch","watch","watch"]
+    var stateArray = ["Sold","Available","Sold","Sold" ]
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let imageView = UIImageView(frame: CGRect(x: 0, y: -10, width: 10, height: 10))
-//        imageView.contentMode = .scaleAspectFit
-//        let image = UIImage(named: "watch")
-//        imageView.image = image
-//        navigationItem.titleView = imageView
-        
         collectioView.delegate = self
         collectioView.dataSource = self
         sideMenue()
@@ -38,7 +33,8 @@ class LandingPage: UIViewController {
         slideshow.slideshowInterval = 2.0
         slideshow.pageIndicator = nil
         addNavBarImage()
-    }
+   
+}
     
     func sideMenue(){
         if revealViewController() != nil {
@@ -81,6 +77,7 @@ extension LandingPage: UICollectionViewDelegate,UICollectionViewDataSource,UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionviewcell", for: indexPath) as! CollectionViewCell
         cell.descriptionLabel.text = watchArray[indexPath.row]
+        cell.statusLabel.text = stateArray[indexPath.row]
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -89,7 +86,17 @@ extension LandingPage: UICollectionViewDelegate,UICollectionViewDataSource,UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("\n\n\n",indexPath.row)
+       // print("\n\n\n",indexPath.row)
+        collectioView.reloadData()
+        var state : Bool = false
+        if stateArray[indexPath.row] == "Sold"{
+            state = false
+            print(indexPath.row,state)
+        }
+        else{
+            state = true
+            performSegue(withIdentifier: "detailitem", sender: nil)
+        }
     }
 }
 

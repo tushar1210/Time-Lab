@@ -94,12 +94,12 @@
 				7832318221767BEF00F3AEFD /* CollectionViewCell.swift */,
 				785158482175951700DD08EF /* SideMenuTableViewCell.swift */,
 				785158462175935700DD08EF /* SideMenuTableVCTableViewController.swift */,
-				78D0C9E621746B1F00F67990 /* Assets.xcassets */,
 				78D0C9E821746B1F00F67990 /* LaunchScreen.storyboard */,
 				78D0C9F221746D7700F67990 /* SWRevealViewController.h */,
 				78D0C9F321746D7700F67990 /* SWRevealViewController.m */,
 				78D0C9EB21746B1F00F67990 /* Info.plist */,
 				78D0C9F121746D7700F67990 /* Time Lab-Bridging-Header.h */,
+				78D0C9E621746B1F00F67990 /* Assets.xcassets */,
 			);
 			path = "Time Lab";
 			sourceTree = "<group>";
@@ -373,7 +373,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDDB7WX63J;
 				INFOPLIST_FILE = "Time Lab/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ADG.Time-Lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Time Lab/Time Lab-Bridging-Header.h";
@@ -392,7 +395,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDDB7WX63J;
 				INFOPLIST_FILE = "Time Lab/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ADG.Time-Lab";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Time Lab/Time Lab-Bridging-Header.h";
