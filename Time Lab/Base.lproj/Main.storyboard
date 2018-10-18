@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="-133"/>
+            <point key="canvasLocation" x="631" y="-349"/>
         </scene>
         <!--Side Menu TableVC Table View Controller-->
         <scene sceneID="Eml-Ec-N6N">
@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="TUL-aO-MzZ" customClass="SideMenuTableViewCell" customModule="Time_Lab" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="70" id="TUL-aO-MzZ" customClass="SideMenuTableViewCell" customModule="Time_Lab" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TUL-aO-MzZ" id="vEA-mo-ljM">
@@ -45,7 +45,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7Z-Ua-o0n">
-                                            <rect key="frame" x="16" y="15" width="42" height="21"/>
+                                            <rect key="frame" x="16" y="15" width="317" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -64,10 +64,16 @@
                             <outlet property="delegate" destination="EqW-iV-sbA" id="FIE-cA-RPW"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="3Ty-tD-5s6" kind="custom" identifier="terms" customClass="SWRevealViewControllerSeguePushController" id="3Bf-ty-Ka6"/>
+                        <segue destination="T7m-g7-Sdf" kind="custom" identifier="aboutus" customClass="SWRevealViewControllerSeguePushController" id="ng9-Zm-HXx"/>
+                        <segue destination="cDh-78-TT5" kind="custom" identifier="contactus" customClass="SWRevealViewControllerSeguePushController" id="grX-Zy-AsS"/>
+                        <segue destination="zso-qv-8UJ" kind="custom" identifier="postad" customClass="SWRevealViewControllerSeguePushController" id="BQo-3e-Jup"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihN-FI-pJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="229.59999999999999" y="664.31784107946032"/>
+            <point key="canvasLocation" x="193" y="537"/>
         </scene>
         <!--Landing Page-->
         <scene sceneID="7ym-nx-Cz1">
@@ -217,7 +223,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbp-sY-Df6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1791.2" y="668.36581709145435"/>
+            <point key="canvasLocation" x="3649" y="1600"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7dl-kf-JRo">
@@ -235,30 +241,30 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RvF-8G-2MA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1018.4" y="670.61469265367316"/>
+            <point key="canvasLocation" x="1009" y="537"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact UsVC-->
         <scene sceneID="5mE-1u-r9u">
             <objects>
-                <viewController id="xIn-tL-lOU" sceneMemberID="viewController">
+                <viewController id="xIn-tL-lOU" customClass="ContactUsVC" customModule="Time_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gOh-pl-Rm8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fft-hF-jQL">
-                                <rect key="frame" x="16" y="40" width="85.5" height="24"/>
+                                <rect key="frame" x="16" y="84" width="85.5" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkF-Bp-thO">
-                                <rect key="frame" x="127" y="94" width="121" height="27.5"/>
+                                <rect key="frame" x="127" y="138" width="121" height="27.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORZ-yU-Wkj">
-                                <rect key="frame" x="16" y="179" width="225" height="33"/>
+                                <rect key="frame" x="16" y="223" width="225" height="33"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Email: info@timelabkw.com">
                                     <color key="titleColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -279,79 +285,106 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y5D-9w-0DY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Jic-Oh-AjF">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="UTD-uq-Nia"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="JVN-qf-HDE">
+                            <connections>
+                                <segue destination="77S-rq-t9d" kind="show" id="0yt-Nh-a4P"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="UTD-uq-Nia" id="uYe-Ar-Bfs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bxb-ug-Oun" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="1451"/>
+            <point key="canvasLocation" x="884" y="2255"/>
         </scene>
-        <!--View Controller-->
+        <!--About UsVC-->
         <scene sceneID="bkX-Dn-xI6">
             <objects>
-                <viewController id="y2D-c4-ZF9" sceneMemberID="viewController">
+                <viewController id="y2D-c4-ZF9" customClass="AboutUsVC" customModule="Time_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rse-Vg-usC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdA-oe-UDL">
-                                <rect key="frame" x="16" y="40" width="85.5" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdA-oe-UDL">
+                                <rect key="frame" x="16" y="40" width="86" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-bv-WTJ">
-                                <rect key="frame" x="137.5" y="94" width="100" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-bv-WTJ">
+                                <rect key="frame" x="138" y="94" width="108" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3xt-SB-yNV">
-                                <rect key="frame" x="19" y="142" width="337.5" height="490"/>
-                                <string key="text">”Time lab Kuwait” is a project established to create a community that caters for both amateurs and professional collectors from around the world to join and be able to view or list their original watches.
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kk6-dg-YYA">
+                                <rect key="frame" x="0.0" y="160" width="375" height="507"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3xt-SB-yNV">
+                                        <rect key="frame" x="18" y="8" width="338" height="490"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <mutableString key="text">”Time lab Kuwait” is a project established to create a community that caters for both amateurs and professional collectors from around the world to join and be able to view or list their original watches.
 
 The website gives you the opportunity to look at the latest and rare luxury watches, also knowing their prices has become simple using our website or application. Getting in direct contact with the advertiser to make a purchase is for your convenience and to avoid any third party fees.
 
 We offer commercial advertising services throughout our website and application to all governmental and private sectors in the state of Kuwait and outside. Applicable fees will be discussed with the advertiser for the time period and space needed to target their selected audience.
 
-We aim to provide the best of the best on our website and application whether it’s a watch listed on our website or an advertisement being presented to the viewers .</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+We aim to provide the best of the best on our website and application whether it’s a watch listed on our website or an advertisement being presented to the viewers .”Time lab Kuwait” is a project established to create a community that caters for both amateurs and professional collectors from around the world to join and be able to view or list their original watches.
+
+The website gives you the opportunity to look at the latest and rare luxury watches, also knowing their prices has become simple using our website or application. Getting in direct contact with the advertiser to make a purchase is for your convenience and to avoid any third party fees.
+
+We offer commercial advertising services throughout our website and application to all governmental and private sectors in the state of Kuwait and outside. Applicable fees will be discussed with the advertiser for the time period and space needed to target their selected audience.
+
+We aim to provide the best of the best on our website and application whether it’s a watch listed on our website or an advertisement being presented to the viewers .</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <constraints>
-                            <constraint firstItem="Kdw-bv-WTJ" firstAttribute="centerX" secondItem="Rse-Vg-usC" secondAttribute="centerX" id="8gX-za-c9w"/>
-                            <constraint firstItem="k6m-cz-Xa4" firstAttribute="bottom" secondItem="3xt-SB-yNV" secondAttribute="bottom" constant="35" id="Dui-48-HqQ"/>
-                            <constraint firstItem="3xt-SB-yNV" firstAttribute="centerX" secondItem="k6m-cz-Xa4" secondAttribute="centerX" id="EyT-L8-3bV"/>
-                            <constraint firstItem="hdA-oe-UDL" firstAttribute="top" secondItem="k6m-cz-Xa4" secondAttribute="top" constant="20" id="G3w-F6-CrL"/>
-                            <constraint firstItem="hdA-oe-UDL" firstAttribute="leading" secondItem="k6m-cz-Xa4" secondAttribute="leading" constant="16" id="W9e-JH-Aqb"/>
-                            <constraint firstItem="Kdw-bv-WTJ" firstAttribute="top" secondItem="hdA-oe-UDL" secondAttribute="bottom" constant="30" id="fMW-Wh-9J2"/>
-                            <constraint firstItem="3xt-SB-yNV" firstAttribute="top" secondItem="Kdw-bv-WTJ" secondAttribute="bottom" constant="20" id="pSd-9Y-oJQ"/>
-                            <constraint firstItem="3xt-SB-yNV" firstAttribute="width" secondItem="Rse-Vg-usC" secondAttribute="width" multiplier="0.9" id="szL-np-yY2"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="k6m-cz-Xa4"/>
                     </view>
+                    <navigationItem key="navigationItem" id="f2a-jo-q8s">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="Jqz-KL-zfd"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="F6c-jx-dKn">
+                            <connections>
+                                <segue destination="77S-rq-t9d" kind="show" id="XjF-Ky-31D"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="Jqz-KL-zfd" id="eYI-tp-l4A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hF-9M-GjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-772" y="1451"/>
+            <point key="canvasLocation" x="-822" y="2255"/>
         </scene>
-        <!--View Controller-->
+        <!--Terms And ConditionsVC-->
         <scene sceneID="2HI-es-o7o">
             <objects>
-                <viewController id="hVv-Qx-2xG" sceneMemberID="viewController">
+                <viewController id="hVv-Qx-2xG" customClass="TermsAndConditionsVC" customModule="Time_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IZt-OL-2wQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbA-9K-caa">
-                                <rect key="frame" x="16" y="40" width="85.5" height="24"/>
+                                <rect key="frame" x="16" y="84" width="85.5" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQH-hg-8BX">
-                                <rect key="frame" x="70.5" y="94" width="234" height="28"/>
+                                <rect key="frame" x="70.5" y="138" width="234" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -366,10 +399,21 @@ We aim to provide the best of the best on our website and application whether it
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uGE-dc-cpW"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AO4-0u-QTX">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="oHd-o2-cNX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="24c-p5-fbD">
+                            <connections>
+                                <segue destination="77S-rq-t9d" kind="show" id="bxa-cz-E2m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="oHd-o2-cNX" id="h6Q-Fs-r2q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecy-5W-YJf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1012" y="670"/>
+            <point key="canvasLocation" x="-1764" y="2255"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1EW-HL-rwL">
@@ -417,30 +461,30 @@ We aim to provide the best of the best on our website and application whether it
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J54-Kn-7Lo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2622" y="664"/>
+            <point key="canvasLocation" x="4615" y="1451"/>
         </scene>
-        <!--View Controller-->
+        <!--Post AdVC-->
         <scene sceneID="4qV-Cb-14Z">
             <objects>
-                <viewController id="xJJ-Og-C3D" sceneMemberID="viewController">
+                <viewController id="xJJ-Og-C3D" customClass="PostAdVC" customModule="Time_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GeC-xY-VTu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Lab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90d-tY-YaW">
-                                <rect key="frame" x="16" y="40" width="85.5" height="24"/>
+                                <rect key="frame" x="16" y="84" width="85.5" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM4-BV-KsY">
-                                <rect key="frame" x="146" y="94" width="83" height="28"/>
+                                <rect key="frame" x="146" y="138" width="83.5" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-tn-FMZ">
-                                <rect key="frame" x="19" y="165" width="337.5" height="100.5"/>
+                                <rect key="frame" x="19" y="209" width="337.5" height="100.5"/>
                                 <string key="text">To post and display your watch on Time Lab Kuwait :
 Kindly send maximum 3 images of the watch with details to 
 What’s app : 00965 99800140
@@ -463,13 +507,99 @@ Attention : We accept original watches only</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dNk-Dp-oqd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Vzy-DD-cc5">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="R57-D7-KmX"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="swK-2a-Cxj">
+                            <connections>
+                                <segue destination="77S-rq-t9d" kind="show" id="X07-Wt-UlD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="R57-D7-KmX" id="oyL-5x-qt7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcM-ju-DIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="1451"/>
+            <point key="canvasLocation" x="2156" y="2255"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rzW-K2-GCy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Ty-tD-5s6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kuT-Xc-p53">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hVv-Qx-2xG" kind="relationship" relationship="rootViewController" id="TKE-NP-c08"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2AI-u8-zkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1764" y="1451"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FHL-ob-kNU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T7m-g7-Sdf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dK2-xN-gQu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y2D-c4-ZF9" kind="relationship" relationship="rootViewController" id="IOK-9v-WfQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PIP-M4-9PQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-822" y="1451"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oxX-qR-Sao">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cDh-78-TT5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ofr-ZM-7yr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xIn-tL-lOU" kind="relationship" relationship="rootViewController" id="nbl-MU-sd2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="um6-9t-6sS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="1451"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Znd-bY-fdo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zso-qv-8UJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u5O-4O-iKd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xJJ-Og-C3D" kind="relationship" relationship="rootViewController" id="s9l-gL-ob0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKK-EF-8bn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2156" y="1450.5247376311845"/>
         </scene>
     </scenes>
     <resources>
         <image name="watch" width="450" height="300"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="bxa-cz-E2m"/>
+    </inferredMetricsTieBreakers>
 </document>

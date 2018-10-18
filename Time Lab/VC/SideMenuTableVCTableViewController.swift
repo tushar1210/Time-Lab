@@ -10,7 +10,11 @@ import UIKit
 
 class SideMenuTableVCTableViewController: UITableViewController {
     var arr = ["1","2","3"]
-    var headers = ["Category","Help & Support","Language"]
+    var headers = ["Categories","Help & Support","Language"]
+    var data = [["watch1","watch2","watch3"],["Post Ad","About Us","Contact Us","Terms & Conditions"],["English","Arabic"]]
+    //var data = ["Categories":["watch1","watch2","watch3"]]
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,15 +30,17 @@ class SideMenuTableVCTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        print("\n\nheader called")
         return headers[section]
+        
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return headers.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arr.count
+        return data[section].count
     }
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
     {
@@ -51,13 +57,28 @@ class SideMenuTableVCTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print("\n\ncell called")
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! SideMenuTableViewCell
-        cell.cellLabel.text = arr[indexPath.row]
+        cell.cellLabel.text = data[indexPath.section][indexPath.row]
         cell.backgroundColor = .black
         cell.cellLabel.textColor = .orange
-        
         
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var val = data[indexPath.section][indexPath.row]
+        tableView.allowsMultipleSelection=false
+        
+        switch val{
+            case "About Us" : performSegue(withIdentifier: "aboutus", sender: nil);break;
+            case "Terms & Conditions" : performSegue(withIdentifier: "terms", sender: nil);break;
+            case "Contact Us" : performSegue(withIdentifier: "contactus", sender: nil);break;
+            case "Post Ad" : performSegue(withIdentifier: "postad", sender: nil);break;
+            default : break;
+        }
+    }
+    
+    
 }

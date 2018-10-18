@@ -18,7 +18,9 @@ class LandingPage: UIViewController {
     @IBOutlet weak var slideshow: ImageSlideshow!
     var watchArray = ["watch1","watch2","watch3","watch4"]
     var slideshowArray = ["watch","watch","watch","watch","watch"]
-    var stateArray = ["Sold","Available","Sold","Sold" ]
+    var stateArray = ["Sold","Available","Sold","Sold"]
+    let tncLabel = ["Categories","Help & Support","Languages"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectioView.delegate = self
@@ -63,6 +65,7 @@ class LandingPage: UIViewController {
         navigationItem.titleView = imageView
     }
 }
+
 
 extension LandingPage: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
         

@@ -10,6 +10,10 @@
 		7832318321767BEF00F3AEFD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832318221767BEF00F3AEFD /* CollectionViewCell.swift */; };
 		785158472175935700DD08EF /* SideMenuTableVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785158462175935700DD08EF /* SideMenuTableVCTableViewController.swift */; };
 		785158492175951700DD08EF /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785158482175951700DD08EF /* SideMenuTableViewCell.swift */; };
+		788B9B1F21791484007927EB /* TermsAndConditionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788B9B1E21791484007927EB /* TermsAndConditionsVC.swift */; };
+		788B9B21217914A4007927EB /* AboutUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788B9B20217914A4007927EB /* AboutUsVC.swift */; };
+		788B9B23217914D2007927EB /* ContactUsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788B9B22217914D2007927EB /* ContactUsVC.swift */; };
+		788B9B2521791539007927EB /* PostAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788B9B2421791539007927EB /* PostAdVC.swift */; };
 		78D0C9E021746B1D00F67990 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0C9DF21746B1D00F67990 /* AppDelegate.swift */; };
 		78D0C9E221746B1D00F67990 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D0C9E121746B1D00F67990 /* LandingPage.swift */; };
 		78D0C9E521746B1D00F67990 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D0C9E321746B1D00F67990 /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 		7832318221767BEF00F3AEFD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		785158462175935700DD08EF /* SideMenuTableVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableVCTableViewController.swift; sourceTree = "<group>"; };
 		785158482175951700DD08EF /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		788B9B1E21791484007927EB /* TermsAndConditionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsVC.swift; sourceTree = "<group>"; };
+		788B9B20217914A4007927EB /* AboutUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsVC.swift; sourceTree = "<group>"; };
+		788B9B22217914D2007927EB /* ContactUsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsVC.swift; sourceTree = "<group>"; };
+		788B9B2421791539007927EB /* PostAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAdVC.swift; sourceTree = "<group>"; };
 		78D0C9DC21746B1D00F67990 /* Time Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D0C9DF21746B1D00F67990 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D0C9E121746B1D00F67990 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
@@ -67,6 +75,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		788B9B2621791C57007927EB /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				78D0C9E121746B1D00F67990 /* LandingPage.swift */,
+				788B9B1E21791484007927EB /* TermsAndConditionsVC.swift */,
+				788B9B20217914A4007927EB /* AboutUsVC.swift */,
+				788B9B22217914D2007927EB /* ContactUsVC.swift */,
+				788B9B2421791539007927EB /* PostAdVC.swift */,
+				785158462175935700DD08EF /* SideMenuTableVCTableViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		788B9B2721791C9A007927EB /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				78D0C9F221746D7700F67990 /* SWRevealViewController.h */,
+				78D0C9F321746D7700F67990 /* SWRevealViewController.m */,
+				7832318221767BEF00F3AEFD /* CollectionViewCell.swift */,
+				785158482175951700DD08EF /* SideMenuTableViewCell.swift */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
 		78D0C9D321746B1D00F67990 = {
 			isa = PBXGroup;
 			children = (
@@ -89,16 +121,12 @@
 			isa = PBXGroup;
 			children = (
 				78D0C9DF21746B1D00F67990 /* AppDelegate.swift */,
-				78D0C9E121746B1D00F67990 /* LandingPage.swift */,
 				78D0C9E321746B1D00F67990 /* Main.storyboard */,
-				7832318221767BEF00F3AEFD /* CollectionViewCell.swift */,
-				785158482175951700DD08EF /* SideMenuTableViewCell.swift */,
-				785158462175935700DD08EF /* SideMenuTableVCTableViewController.swift */,
+				788B9B2621791C57007927EB /* VC */,
+				788B9B2721791C9A007927EB /* Subclasses */,
 				78D0C9E821746B1F00F67990 /* LaunchScreen.storyboard */,
-				78D0C9F221746D7700F67990 /* SWRevealViewController.h */,
-				78D0C9F321746D7700F67990 /* SWRevealViewController.m */,
-				78D0C9EB21746B1F00F67990 /* Info.plist */,
 				78D0C9F121746D7700F67990 /* Time Lab-Bridging-Header.h */,
+				78D0C9EB21746B1F00F67990 /* Info.plist */,
 				78D0C9E621746B1F00F67990 /* Assets.xcassets */,
 			);
 			path = "Time Lab";
@@ -217,12 +245,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				788B9B1F21791484007927EB /* TermsAndConditionsVC.swift in Sources */,
 				785158492175951700DD08EF /* SideMenuTableViewCell.swift in Sources */,
 				78D0C9E221746B1D00F67990 /* LandingPage.swift in Sources */,
 				7832318321767BEF00F3AEFD /* CollectionViewCell.swift in Sources */,
 				785158472175935700DD08EF /* SideMenuTableVCTableViewController.swift in Sources */,
+				788B9B23217914D2007927EB /* ContactUsVC.swift in Sources */,
 				78D0C9E021746B1D00F67990 /* AppDelegate.swift in Sources */,
+				788B9B21217914A4007927EB /* AboutUsVC.swift in Sources */,
 				78D0C9F421746D7800F67990 /* SWRevealViewController.m in Sources */,
+				788B9B2521791539007927EB /* PostAdVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
