@@ -27,5 +27,9 @@ class TermsAndConditionsVC: UIViewController {
     }
 
     
-
+    @IBAction func homeButton(_ sender: Any) {
+        let home:UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "root"))!
+        self.present(home, animated: true, completion: nil)
+    }
+    
 }

@@ -25,4 +25,9 @@ class PostAdVC: UIViewController {
         }
     }
     
+    @IBAction func menuButton(_ sender: Any) {
+        
+        let home:UIViewController = (self.storyboard?.instantiateViewController(withIdentifier: "root"))!
+        self.present(home, animated: true, completion: nil)
+    }
 }

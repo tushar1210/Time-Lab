@@ -12,7 +12,7 @@
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="root" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -78,7 +78,7 @@
         <!--Landing Page-->
         <scene sceneID="7ym-nx-Cz1">
             <objects>
-                <viewController id="77S-rq-t9d" customClass="LandingPage" customModule="Time_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingPage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="77S-rq-t9d" customClass="LandingPage" customModule="Time_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lhf-JH-iPd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,7 +211,9 @@
                         <viewLayoutGuide key="safeArea" id="4RE-Qj-qYq"/>
                     </view>
                     <navigationItem key="navigationItem" id="nkN-Z6-kNQ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="MnC-dU-wZ3"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="play" id="MnC-dU-wZ3">
+                            <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
@@ -223,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vbp-sY-Df6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3649" y="1600"/>
+            <point key="canvasLocation" x="3648.8000000000002" y="1599.400299850075"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7dl-kf-JRo">
@@ -233,6 +235,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eiL-m7-q14">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -289,7 +292,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Item" id="UTD-uq-Nia"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="JVN-qf-HDE">
                             <connections>
-                                <segue destination="77S-rq-t9d" kind="show" id="0yt-Nh-a4P"/>
+                                <action selector="homeButton:" destination="xIn-tL-lOU" id="No4-TI-GFj"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -316,20 +319,21 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-bv-WTJ">
-                                <rect key="frame" x="138" y="94" width="108" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdw-bv-WTJ">
+                                <rect key="frame" x="137.5" y="94" width="100" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="r2k-mO-1MU"/>
+                                    <constraint firstAttribute="width" constant="100" id="tny-MY-QcL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kk6-dg-YYA">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" directionalLockEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kk6-dg-YYA">
                                 <rect key="frame" x="0.0" y="160" width="375" height="507"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3xt-SB-yNV">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3xt-SB-yNV">
                                         <rect key="frame" x="18" y="8" width="338" height="490"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <mutableString key="text">”Time lab Kuwait” is a project established to create a community that caters for both amateurs and professional collectors from around the world to join and be able to view or list their original watches.
 
 The website gives you the opportunity to look at the latest and rare luxury watches, also knowing their prices has become simple using our website or application. Getting in direct contact with the advertiser to make a purchase is for your convenience and to avoid any third party fees.
@@ -348,19 +352,28 @@ We aim to provide the best of the best on our website and application whether it
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3xt-SB-yNV" secondAttribute="bottom" id="8fX-U8-Nol"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Kdw-bv-WTJ" firstAttribute="centerX" secondItem="k6m-cz-Xa4" secondAttribute="centerX" id="1hR-0t-eBm"/>
+                            <constraint firstItem="3xt-SB-yNV" firstAttribute="centerX" secondItem="k6m-cz-Xa4" secondAttribute="centerX" id="1v2-GF-816"/>
+                            <constraint firstItem="Kdw-bv-WTJ" firstAttribute="top" secondItem="k6m-cz-Xa4" secondAttribute="top" constant="30" id="Gas-32-pgD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="k6m-cz-Xa4"/>
                     </view>
                     <navigationItem key="navigationItem" id="f2a-jo-q8s">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="Jqz-KL-zfd"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="F6c-jx-dKn">
                             <connections>
-                                <segue destination="77S-rq-t9d" kind="show" id="XjF-Ky-31D"/>
+                                <action selector="homeButton:" destination="y2D-c4-ZF9" id="nF8-hR-bbf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="menuButton" destination="Jqz-KL-zfd" id="eYI-tp-l4A"/>
                     </connections>
@@ -403,7 +416,7 @@ We aim to provide the best of the best on our website and application whether it
                         <barButtonItem key="leftBarButtonItem" title="Item" id="oHd-o2-cNX"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="24c-p5-fbD">
                             <connections>
-                                <segue destination="77S-rq-t9d" kind="show" id="bxa-cz-E2m"/>
+                                <action selector="homeButton:" destination="hVv-Qx-2xG" id="Hem-un-y3y"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -478,7 +491,7 @@ We aim to provide the best of the best on our website and application whether it
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Post Ad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM4-BV-KsY">
-                                <rect key="frame" x="146" y="138" width="83.5" height="28"/>
+                                <rect key="frame" x="146" y="138" width="83" height="28"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
                                 <color key="textColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -511,7 +524,7 @@ Attention : We accept original watches only</string>
                         <barButtonItem key="leftBarButtonItem" title="Item" id="R57-D7-KmX"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" id="swK-2a-Cxj">
                             <connections>
-                                <segue destination="77S-rq-t9d" kind="show" id="X07-Wt-UlD"/>
+                                <action selector="menuButton:" destination="xJJ-Og-C3D" id="eBe-ta-6sK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -531,6 +544,7 @@ Attention : We accept original watches only</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kuT-Xc-p53">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -549,6 +563,7 @@ Attention : We accept original watches only</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dK2-xN-gQu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -567,6 +582,7 @@ Attention : We accept original watches only</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ofr-ZM-7yr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -585,6 +601,7 @@ Attention : We accept original watches only</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u5O-4O-iKd">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -599,7 +616,4 @@ Attention : We accept original watches only</string>
     <resources>
         <image name="watch" width="450" height="300"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="bxa-cz-E2m"/>
-    </inferredMetricsTieBreakers>
 </document>
