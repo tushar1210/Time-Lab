@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7830387421820C230038232F /* LViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830387321820C230038232F /* LViewController.swift */; };
+		7830387721822E670038232F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830387521822E670038232F /* Constants.swift */; };
+		7830387821822E670038232F /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7830387621822E670038232F /* RequestHandler.swift */; };
 		7832318321767BEF00F3AEFD /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832318221767BEF00F3AEFD /* CollectionViewCell.swift */; };
 		785158472175935700DD08EF /* SideMenuTableVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785158462175935700DD08EF /* SideMenuTableVCTableViewController.swift */; };
 		785158492175951700DD08EF /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785158482175951700DD08EF /* SideMenuTableViewCell.swift */; };
@@ -30,6 +32,8 @@
 		642B214254617CDFBD0E82CA /* Pods-Time Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Time Lab.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Time Lab/Pods-Time Lab.debug.xcconfig"; sourceTree = "<group>"; };
 		6C1C08DC217BB1ECC2BCE663 /* Pods_Time_Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Time_Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7830387321820C230038232F /* LViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LViewController.swift; sourceTree = "<group>"; };
+		7830387521822E670038232F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7830387621822E670038232F /* RequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
 		7832318221767BEF00F3AEFD /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		785158462175935700DD08EF /* SideMenuTableVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableVCTableViewController.swift; sourceTree = "<group>"; };
 		785158482175951700DD08EF /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -77,6 +81,15 @@
 				5915C9BB09FD504F4B2DC208 /* Pods-Time Lab.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7830387921822EA70038232F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7830387621822E670038232F /* RequestHandler.swift */,
+				7830387521822E670038232F /* Constants.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		788B9B2621791C57007927EB /* VC */ = {
@@ -128,6 +141,7 @@
 			children = (
 				78D0C9DF21746B1D00F67990 /* AppDelegate.swift */,
 				78D0C9E321746B1D00F67990 /* Main.storyboard */,
+				7830387921822EA70038232F /* Networking */,
 				788B9B2621791C57007927EB /* VC */,
 				788B9B2721791C9A007927EB /* Subclasses */,
 				78D0C9E821746B1F00F67990 /* LaunchScreen.storyboard */,
@@ -253,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7830387821822E670038232F /* RequestHandler.swift in Sources */,
 				788B9B1F21791484007927EB /* TermsAndConditionsVC.swift in Sources */,
 				785158492175951700DD08EF /* SideMenuTableViewCell.swift in Sources */,
 				78D0C9E221746B1D00F67990 /* LandingPage.swift in Sources */,
@@ -260,6 +275,7 @@
 				7832318321767BEF00F3AEFD /* CollectionViewCell.swift in Sources */,
 				785158472175935700DD08EF /* SideMenuTableVCTableViewController.swift in Sources */,
 				788B9B23217914D2007927EB /* ContactUsVC.swift in Sources */,
+				7830387721822E670038232F /* Constants.swift in Sources */,
 				7830387421820C230038232F /* LViewController.swift in Sources */,
 				78D0C9E021746B1D00F67990 /* AppDelegate.swift in Sources */,
 				788B9B21217914A4007927EB /* AboutUsVC.swift in Sources */,
