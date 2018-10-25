@@ -2,17 +2,21 @@ PODS:
   - ImageSlideshow (1.6.1):
     - ImageSlideshow/Core (= 1.6.1)
   - ImageSlideshow/Core (1.6.1)
+  - SwipeMenuViewController (2.2.0)
 
 DEPENDENCIES:
   - ImageSlideshow (~> 1.6)
+  - SwipeMenuViewController
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ImageSlideshow
+    - SwipeMenuViewController
 
 SPEC CHECKSUMS:
   ImageSlideshow: f0f33e1a20668e83d77f5fb7729e4ae4437c0759
+  SwipeMenuViewController: 9f4c0a3e3ed63579662577f979585de422f053dc
 
-PODFILE CHECKSUM: ec4cb7b69c55b88c20bbca2ed1ebfbf1e30c1cac
+PODFILE CHECKSUM: d9201b9be64cde80547049d269bf80f2bc9fc947
 
 COCOAPODS: 1.5.3

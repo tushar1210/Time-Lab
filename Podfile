@@ -6,7 +6,7 @@ target 'Time Lab' do
   use_frameworks!
 
   # Pods for Time Lab
-  #pod 'SwipeMenuViewController'
+  pod 'SwipeMenuViewController'
   pod 'ImageSlideshow', '~> 1.6'
 
 

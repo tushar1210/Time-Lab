@@ -68,7 +68,7 @@ class SideMenuTableVCTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var val = data[indexPath.section][indexPath.row]
+        let val = data[indexPath.section][indexPath.row]
         tableView.allowsMultipleSelection=false
         
         switch val{

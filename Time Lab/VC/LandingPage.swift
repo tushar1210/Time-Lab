@@ -8,14 +8,15 @@
 
 import UIKit
 import ImageSlideshow
+import SwipeMenuViewController
 
-class LandingPage: UIViewController {
+class LandingPage: SwipeMenuViewController {
     
+    @IBOutlet var swipeView: SwipeMenuView!
     @IBOutlet weak var menuButton: UIBarButtonItem!
-
     @IBOutlet weak var collectioView: UICollectionView!
-    
     @IBOutlet weak var slideshow: ImageSlideshow!
+    
     var watchArray = ["watch1","watch2","watch3","watch4"]
     var slideshowArray = ["watch","watch","watch","watch","watch"]
     var stateArray = ["Sold","Available","Sold","Sold"]
@@ -35,10 +36,12 @@ class LandingPage: UIViewController {
         slideshow.slideshowInterval = 2.0
         slideshow.pageIndicator = nil
         addNavBarImage()
+        swipeView.delegate = self
+        swipeView.dataSource = self
    
-}
+    }
     
-    func sideMenue(){
+    func sideMenue() {
         if revealViewController() != nil {
             menuButton.target = revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -46,6 +49,7 @@ class LandingPage: UIViewController {
             view.addGestureRecognizer((self.revealViewController()?.panGestureRecognizer())!)
         }
     }
+    
     func addNavBarImage() {
 
         let navController = navigationController!
@@ -89,7 +93,6 @@ extension LandingPage: UICollectionViewDelegate,UICollectionViewDataSource,UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       // print("\n\n\n",indexPath.row)
         collectioView.reloadData()
         var state : Bool = false
         if stateArray[indexPath.row] == "Sold"{
@@ -102,5 +105,3 @@ extension LandingPage: UICollectionViewDelegate,UICollectionViewDataSource,UICol
         }
     }
 }
-
-
